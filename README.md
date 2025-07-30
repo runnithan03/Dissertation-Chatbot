@@ -58,8 +58,8 @@
 ## **How to Run Locally**
 Clone the repo and install dependencies:
 ```bash
-git clone https://github.com/runnithan03/equity-fund-chatbot.git
-cd equity-fund-chatbot
+git clone https://github.com/runnithan03/dissertation-chatbot.git
+cd dissertation-chatbot
 pip install -r requirements.txt
 ```
 
