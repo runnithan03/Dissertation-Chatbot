@@ -72,8 +72,8 @@ streamlit run app.py
 ├── images/ # Screenshots and architecture diagrams for the README  
 ├── README.md # Project documentation  
 ├── app.py # Main chatbot app (Gradio/Streamlit entry point)  
-├── chunks.pkl # Pickled data chunks used for embeddings or retrieval  
-├── data_ingestion.py # Script for ingesting and preprocessing data
+├── chunks.pkl # Pickled data chunks used for embeddings or retrieval    
+├── data_ingestion.py # Script for ingesting and preprocessing data:
 
 ### What This Does
 
@@ -88,8 +88,8 @@ streamlit run app.py
 
 4. **Splits the text into chunks (500 characters)** with **100 characters overlap** for better retrieval context.
 
-├── embeddings.npy # Precomputed embeddings for vector search
-├── embeddings_store.py # Manages the creation and storage of embeddings
+├── embeddings.npy # Precomputed embeddings for vector search    
+├── embeddings_store.py # Manages the creation and storage of embeddings:
 
 ### What This Does
 
@@ -105,10 +105,10 @@ In this step, we:
    - The query is embedded.
    - FAISS returns the top 3 most similar chunks from the dissertation dataset.
 
-├── faiss_index.bin # FAISS index for efficient similarity search
-├── query_pipeline.py # Pipeline logic to handle queries and retrieve answers
+├── faiss_index.bin # FAISS index for efficient similarity search    
+├── query_pipeline.py # Pipeline logic to handle queries and retrieve answers:  
 
-### Step 3a: Querying the RAG Pipeline with GPT-4
+### What this does
 
 In this step, we:
 1. **Take a user query** and embed it using the same SentenceTransformer model.
