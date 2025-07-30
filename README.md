@@ -49,9 +49,8 @@
 
 ---
 
-## **Screenshots**
-*(Add images or GIFs of the chatbot in action)*  
-![Chatbot Screenshot](images/architecture.png)  
+## **Chatbot in Action** 
+![Chatbot Screenshot](images/intermediate.png)  
 ![Chatbot Outputs](images/model-output.png)  
 
 ---
