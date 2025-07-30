@@ -69,3 +69,59 @@ streamlit run app.py
 ```
 
 ## **Repository Structure and Breakdown** 
+├── images/ # Screenshots and architecture diagrams for the README
+├── README.md # Project documentation
+├── app.py # Main chatbot app (Gradio/Streamlit entry point)
+├── chunks.pkl # Pickled data chunks used for embeddings or retrieval
+├── data_ingestion.py # Script for ingesting and preprocessing data
+
+### What This Does
+
+1. **Installs necessary libraries:**
+   - `pypdf` for extracting text from PDFs.
+   - `langchain` for text chunking.
+   - `sentence-transformers` and `faiss-cpu` (which are used in the next step).
+
+2. **Uploads dissertation PDFs**.
+
+3. **Extracts text from all PDFs into one string.**
+
+4. **Splits the text into chunks (500 characters)** with **100 characters overlap** for better retrieval context.
+
+├── embeddings.npy # Precomputed embeddings for vector search
+├── embeddings_store.py # Manages the creation and storage of embeddings
+
+### What This Does
+
+In this step, we:
+1. **Convert all text chunks into embeddings** using `sentence-transformers`.  
+   - An embedding is a vector (e.g., 384 dimensions) representing the meaning of a text.  
+   - Semantically similar texts have embeddings that are close together in vector space.
+
+2. **Store embeddings in FAISS**, a high-performance vector database.  
+   - FAISS allows us to quickly retrieve the most relevant chunks given a query.
+
+3. **Run a test query** to confirm the pipeline works:
+   - The query is embedded.
+   - FAISS returns the top 3 most similar chunks from the dissertation dataset.
+
+├── faiss_index.bin # FAISS index for efficient similarity search
+├── query_pipeline.py # Pipeline logic to handle queries and retrieve answers
+
+### Step 3a: Querying the RAG Pipeline with GPT-4
+
+In this step, we:
+1. **Take a user query** and embed it using the same SentenceTransformer model.
+2. **Retrieve the top-k most relevant chunks** from the FAISS index.
+3. **Combine the chunks with the question** and pass them to a pre-trained LLM (e.g., GPT-4 via OpenAI API).
+4. **Generate a final answer** that is both context-aware and grounded in your dissertation data.
+
+---
+
+**Why This Works:**
+- The FAISS retriever ensures the LLM receives only the most relevant context.
+- The LLM then uses its language understanding + the provided context to produce accurate answers.
+
+---
+
+├── requirements.txt # Python dependencies
