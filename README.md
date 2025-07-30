@@ -45,7 +45,7 @@
 ---
 
 ## **Demo**
-- **[Live Demo]([https://your-demo-link.com](https://huggingface.co/spaces/runnithan03/dissertation-chatbot))** – *Try the chatbot here!*  
+- **[Live Demo]([https://huggingface.co/spaces/runnithan03/dissertation-chatbot])** – *Try the chatbot here!*  
 
 ---
 
