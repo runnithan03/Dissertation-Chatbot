@@ -69,10 +69,10 @@ streamlit run app.py
 ```
 
 ## **Repository Structure and Breakdown** 
-├── images/ # Screenshots and architecture diagrams for the README
-├── README.md # Project documentation
-├── app.py # Main chatbot app (Gradio/Streamlit entry point)
-├── chunks.pkl # Pickled data chunks used for embeddings or retrieval
+├── images/ # Screenshots and architecture diagrams for the README  
+├── README.md # Project documentation  
+├── app.py # Main chatbot app (Gradio/Streamlit entry point)  
+├── chunks.pkl # Pickled data chunks used for embeddings or retrieval  
 ├── data_ingestion.py # Script for ingesting and preprocessing data
 
 ### What This Does
