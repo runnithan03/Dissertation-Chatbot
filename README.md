@@ -6,8 +6,8 @@
 
 ## **Why I Built It**
 - **Problem:** Financial analysis tools often lack user-friendly interfaces for querying complex statistical models.  
-- **Motivation:** I wanted to bridge this gap by creating a chatbot that translates natural language queries into predictions and insights using models from my dissertation.  
-- **Goal:** Make complex statistical modelling (MRLR, Random Forests, XGBoost) accessible via a conversational interface.
+- **Motivation:** I wanted to bridge this gap by creating a chatbot that translates people's queries into insights using models from my dissertation.  
+- **Goal:** Make complex statistical modelling (Multiple-Response Linear Regression (MRLR), Random Forests, XGBoost) accessible via a conversational interface.
 
 ---
 
@@ -18,7 +18,7 @@
 - **Chat Interface:** Streamlit (frontend UI)  
 - **Backend:** FastAPI (Python) integrated with R models via Plumber or reticulate  
 - **Models:** MRLR, Random Forest, XGBoost (trained on equity fund data)  
-- **Hosting:** Deployed using Vercel (frontend) and Render/AWS (backend)  
+- **Hosting:** Deployed using Hugging Face Spaces and Gradio 
 
 **Trade-offs:**
 - Prioritised **interpretability over raw accuracy** by including MRLR for transparent predictions.
@@ -37,23 +37,22 @@
 ## **Tech Stack**
 | Component  | Technology |
 |------------|------------|
-| **Frontend**   | Streamlit / React |
-| **Backend**    | FastAPI |
+| **Frontend**   | Streamlit |
+| **Backend**    | Python |
 | **Models**     | R (MRLR, Random Forests), Python (XGBoost) |
-| **Deployment** | Vercel, Render |
+| **Deployment** | Hugging Face Spaces and Gradio |
 
 ---
 
 ## **Demo**
 - **[Live Demo]([https://your-demo-link.com](https://huggingface.co/spaces/runnithan03/dissertation-chatbot))** – *Try the chatbot here!*  
-- **[View Code Examples](notebooks/demo.ipynb)**  
 
 ---
 
 ## **Screenshots**
 *(Add images or GIFs of the chatbot in action)*  
 ![Chatbot Screenshot](images/architecture.png)  
-![Model Predictions](images/model-output.png)  
+![Chatbot Outputs](images/model-output.png)  
 
 ---
 
