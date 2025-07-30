@@ -108,7 +108,7 @@ In this step, we:
 ├── faiss_index.bin # FAISS index for efficient similarity search    
 ├── query_pipeline.py # Pipeline logic to handle queries and retrieve answers:  
 
-### What this does
+### What This Does
 
 In this step, we:
 1. **Take a user query** and embed it using the same SentenceTransformer model.
