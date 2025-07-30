@@ -1,4 +1,4 @@
-# Equity Fund Chatbot
+# Dissertation Chatbot
 
 *A chatbot that interprets user queries about equity fund profitability and sustainability using Multiple-Response Regression models.*
 
