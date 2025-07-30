@@ -13,7 +13,6 @@
 
 ## **Architecture Overview**
 ![Architecture Diagram](images/architecture.png)  
-*(Replace this with your actual diagram.)*
 
 **Key Components:**
 - **Chat Interface:** Streamlit (frontend UI)  
@@ -29,7 +28,7 @@
 ---
 
 ## **What I Learned**
-- **System Design:** Bridging R and Python environments for model serving required efficient serialization and caching to reduce latency.
+- **System Design:** Bridging R and Python environments for model serving requires efficient serialisation and caching to reduce latency.
 - **Model Insights:** MRLR provided explainability for feature effects, while XGBoost offered improved predictive accuracy.
 - **Soft Skills:** Improved ability to communicate complex modelling ideas to non-technical users through UI design.
 
@@ -46,14 +45,14 @@
 ---
 
 ## **Demo**
-- **[Live Demo](https://your-demo-link.com)** – *Try the chatbot here!*  
+- **[Live Demo]([https://your-demo-link.com](https://huggingface.co/spaces/runnithan03/dissertation-chatbot))** – *Try the chatbot here!*  
 - **[View Code Examples](notebooks/demo.ipynb)**  
 
 ---
 
 ## **Screenshots**
 *(Add images or GIFs of the chatbot in action)*  
-![Chatbot Screenshot](images/chatbot-demo.png)  
+![Chatbot Screenshot](images/architecture.png)  
 ![Model Predictions](images/model-output.png)  
 
 ---
@@ -61,7 +60,7 @@
 ## **How to Run Locally**
 Clone the repo and install dependencies:
 ```bash
-git clone https://github.com/[your-username]/equity-fund-chatbot.git
+git clone https://github.com/runnithan03/equity-fund-chatbot.git
 cd equity-fund-chatbot
 pip install -r requirements.txt
 ```
